@@ -85,7 +85,7 @@ export function Quiz() {
             ></ProgressBar>
 
             <Question
-              question={questions[questionNumber].question}
+              {...questions[questionNumber]}
               answer={handleAnswers}
             ></Question>
 

@@ -1,0 +1,31 @@
+.Card {
+  background-color: #2b2727;
+  color: white;
+
+  padding: 0px 40px 0px 40px;
+  margin: 0px;
+  margin-bottom: 30px;
+  width: 80vw;
+  border: 0px;
+}
+
+.Container {
+  margin-top: 30px;
+  width: 50%;
+  font-size: 35px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Button {
+  font-size: 25px;
+  width: 100px;
+  outline: none;
+  box-shadow: none;
+}
+
+.p {
+  text-align: center;
+}

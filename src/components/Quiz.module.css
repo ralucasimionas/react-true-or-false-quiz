@@ -1,0 +1,42 @@
+.Container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #000000;
+  color: #ffffff;
+
+  font-size: 40px;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Question {
+  background-color: #2b2727;
+  color: #ffffff;
+  text-align: center;
+
+  font-size: 40px;
+  font-family: "Cormorant Garamond";
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.h1 {
+  color: #ffff00;
+  font-size: 50px;
+}
+
+.ProgressBar {
+  height: 25px;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}

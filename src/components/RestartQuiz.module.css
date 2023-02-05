@@ -1,0 +1,28 @@
+.Card {
+  background-color: #2b2727;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Cormorant Garamond";
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50vw;
+  align-items: center;
+}
+
+.Score {
+  margin: 0;
+  color: #25be9b;
+  font-size: 150px;
+  text-shadow: 0px 0px 25px #25be9b;
+}
+
+.Button {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 400px;
+}

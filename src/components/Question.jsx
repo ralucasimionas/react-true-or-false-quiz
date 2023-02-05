@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 export function Question(props) {
@@ -8,33 +8,32 @@ export function Question(props) {
       style={{
         backgroundColor: "#2b2727",
         color: "white",
-        textAlign: "center",
-        fontSize: "35px",
-        fontFamily: "Cormorant Garamond",
-        paddingTop: "50px",
-        paddingBottom: "50px",
-        marginTop: "30px",
+        padding: "0px 40px 0px 40px",
+
         marginBottom: "30px",
-        alignItems: "center",
-        justifyContent: "space-between",
+        width: "80vw",
+
+        border: "0px",
       }}
     >
       <p>{question || "Loading..."}</p>
 
-      <div
-        className="answerButtons"
-        styles={{
+      <Container
+        style={{
+          marginTop: "30px",
+          width: "50%",
+          fontSize: "35px",
+
           display: "flex",
           justifyContent: "space-evenly",
+          alignItems: "center",
         }}
       >
         <Button
           variant="success"
           onClick={() => answer("True")}
           style={{
-            fontFamily: "Cormorant Garamond",
-            fontSize: "20px",
-            marginRight: "20px",
+            fontSize: "25px",
             width: "100px",
           }}
         >
@@ -44,15 +43,13 @@ export function Question(props) {
           variant="danger"
           onClick={() => answer("False")}
           style={{
-            fontFamily: "Cormorant Garamond",
-            fontSize: "20px",
-            marginLeft: "20px",
+            fontSize: "25px",
             width: "100px",
           }}
         >
           False
         </Button>
-      </div>
+      </Container>
     </Card>
   );
 }

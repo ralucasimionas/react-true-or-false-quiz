@@ -1,28 +1,31 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 export function RestartQuiz(props) {
   const { points, reset } = props;
   return (
-    <Container
+    <Card
       style={{
-        width: "60vw",
-        marginTop: "20px",
-        marginBottom: "20px",
-        paddingTop: "20px",
-        paddingBottom: "20px",
-        backgroundColor: "black",
+        backgroundColor: "#2b2727",
         color: "white",
-        fontSize: "40px",
-        fontFamily: "Cormorant Garamond",
         textAlign: "center",
+        fontSize: "50px",
+        fontFamily: "Cormorant Garamond",
+        paddingTop: "50px",
+        paddingBottom: "50px",
+        marginTop: "30px",
+        marginBottom: "30px",
+        width: "50vw",
+        alignItems: "center",
       }}
     >
-      <h1>Congratulations! </h1>
-      <p>You scored</p>
+      <p>Congratulations! </p>
+      <p>You scored{"   "}</p>
       <p
         style={{
+          margin: 0,
           color: "#25be9b",
-          fontSize: "100px",
+          fontSize: "150px",
+          textShadow: "0px  0px  25px  #25be9b",
         }}
       >
         {(points * 100) / 10}%
@@ -31,10 +34,15 @@ export function RestartQuiz(props) {
       <Button
         variant="light"
         onClick={() => reset()}
-        style={{ fontSize: "30 px" }}
+        style={{
+          fontSize: "30px",
+          marginTop: "30px",
+          marginBottom: "15px",
+          width: "400px",
+        }}
       >
         Would you like to try again?
       </Button>
-    </Container>
+    </Card>
   );
 }

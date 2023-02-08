@@ -24,6 +24,7 @@ export function Quiz() {
   }
 
   function handleReset() {
+    window.location.reload();
     setQuestionNumber(0);
     setPoints(0);
   }

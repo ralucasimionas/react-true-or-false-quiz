@@ -6,7 +6,10 @@ export function Question(props) {
   const { question, answer } = props;
   return (
     <Card className={styles.Card}>
-      <p className={styles.p}>{question || "Loading..."}</p>
+      <p
+        className={styles.p}
+        dangerouslySetInnerHTML={{ __html: question || "Loading..." }}
+      ></p>
 
       <Container className={styles.Container}>
         <Button

@@ -23,7 +23,7 @@
   font-size: 25px;
   width: 100px;
   outline: none;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .p {

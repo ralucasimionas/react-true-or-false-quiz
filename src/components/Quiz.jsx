@@ -9,11 +9,11 @@ export function Quiz() {
   const [questionNumber, setQuestionNumber] = useState(0);
   const [points, setPoints] = useState(0);
 
-  const questions = useFetch(
+  const [questions, reFetchQuestions] = useFetch(
     "https://opentdb.com/api.php?amount=10&category=22&type=boolean"
   );
 
-  console.log("questions", questions);
+  console.log("questionsnumber", questionNumber, questions);
 
   function handleAnswers(answer) {
     if (answer === questions[questionNumber].correct_answer) {
@@ -24,7 +24,9 @@ export function Quiz() {
   }
 
   function handleReset() {
-    window.location.reload();
+    reFetchQuestions(
+      "https://opentdb.com/api.php?amount=10&category=22&type=boolean"
+    );
     setQuestionNumber(0);
     setPoints(0);
   }

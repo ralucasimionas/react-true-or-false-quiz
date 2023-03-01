@@ -40,3 +40,19 @@
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
+@media (max-width: 576px) {
+  .Container {
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+  }
+
+  .Question {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .h1 {
+    font-size: 35px;
+  }
+}

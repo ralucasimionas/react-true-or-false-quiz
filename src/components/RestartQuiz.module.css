@@ -26,3 +26,19 @@
   margin-bottom: 15px;
   width: 400px;
 }
+
+@media (max-width: 576px) {
+  .Card {
+    width: 90vw;
+    font-size: 35px;
+  }
+
+  .Score {
+    font-size: 170px;
+  }
+
+  .Button {
+    font-size: 20px;
+    width: 80%;
+  }
+}

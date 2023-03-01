@@ -6,15 +6,19 @@ import { Container, ProgressBar } from "react-bootstrap";
 import styles from "./Quiz.module.css";
 
 export function Quiz() {
+  // Setting the initial value of the question number and points to 0.
   const [questionNumber, setQuestionNumber] = useState(0);
   const [points, setPoints] = useState(0);
 
+  // Using the API response to set the questions for the quiz.
   const [questions, reFetchQuestions] = useFetch(
     "https://opentdb.com/api.php?amount=10&category=22&type=boolean"
   );
 
-  console.log("questionsnumber", questionNumber, questions);
+  // console.log("questionsnumber", questionNumber, questions);
 
+
+// Checking the if the question's answer if true of false.
   function handleAnswers(answer) {
     if (answer === questions[questionNumber].correct_answer) {
       setPoints(points + 1);
@@ -23,6 +27,7 @@ export function Quiz() {
     setQuestionNumber(questionNumber + 1);
   }
 
+  // Reseting the form after answering all the questions.
   function handleReset() {
     reFetchQuestions(
       "https://opentdb.com/api.php?amount=10&category=22&type=boolean"

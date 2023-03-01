@@ -1,6 +1,11 @@
 # True OR False APP
 
-This is the final project I decided to make as a final request in order to complete the Web Development course I attended @ IT School.
+This is the final project I decided to make as a final request in order to complete the Web Development course I attended @ IT School. 
+
+## Preview Image
+
+![My_Image](./src/images/samplePhoto.png)
+
 
 ## Demo
 
